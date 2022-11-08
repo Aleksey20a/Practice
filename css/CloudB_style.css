@@ -33,10 +33,10 @@
 
 
 .first {                                 /* 1 часть */
-    /*width: 1440px;
-    height: 782px;*/
+    width: 1440px;
+    height: 782px;
     text-align:center;
-    /*background-image:url("img/wallp.png"); */                   /* тут должен быть фон с ноутбуком*/ 
+    background-image:url("../img/Wallp.png");                   /* тут должен быть фон с ноутбуком*/ 
 }
 
 
@@ -45,7 +45,7 @@
     height: 500px; 
 }
 
-.second-container {;
+.second-container {
     margin:auto;
     padding-top: 127px;
     padding-left: 165px;
