@@ -10,6 +10,7 @@
     height: 22px;
     display:flex; 
     padding-top: 59px; 
+    background: #ffffff url("img/bg-page.png") no-repeat top center;
 }
 
 .header-first {
@@ -37,9 +38,10 @@
 
 
 .first {                                 /* 1 часть */
-    width: 1440px;
-    height: 782px;
-    text-align:center; 
+    /*width: 1440px;
+    height: 782px;*/
+    text-align:center;
+    /*background-image:url("img/wallp.png"); */                   /* тут должен быть фон с ноутбуком*/ 
 }
 
 
@@ -58,7 +60,7 @@
 
 .sc-menu {                          /* 2 бордер  */
     display:flex;               /* в одну строку */
-    list-style: none         /* убрать точки */
+    list-style: none;         /* убрать точки */
 }
 
 .sc-menu-card-first {
@@ -249,3 +251,7 @@ h1 {
 h2 {
     font-size: 36px;
 }
+
+
+
+line-height:26px; /* отступ строк */
