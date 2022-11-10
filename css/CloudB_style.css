@@ -1,26 +1,38 @@
 @font-face {
     font-family: 'Lato', sans-serif;
-    src: url("/fonts/Lato/Lato-Regular.ttf") format('truetype');
+    src: url("/fonts/Lato/Lato-Regular.ttf") format('truetype'); /*  фон с ноутбуком*/
 }
 
-
-.header {
-    font-family: 'Lato', sans-serif;
+.header {                                 
     width: 1440px;
-    height: 22px;
-    display:flex; 
-    padding-top: 59px;
+    height: 782px;
+    text-align:center; /* Выравнивание текста по центру */
+    background-image:url("../img/Wallp.png");
+    background-color: #ED4C5C; 
+    opacity: 0.5;                   
 }
 
-.header-second {
+.header-first {
+    width: 100%; 
+    /*height: 22px;*/
+    display:flex; /* в одну строку */
+    justify-content: space-between; /* Равномерно распределяет все элементы по ширине flex-блока */
+    padding-top: 59px;
+    align-items: center; /* Флексы выравниваются по линии поперечной оси */
+}
+
+/* .header-second {
     width: 485px;
     height: 22px;
 }
+*/
 
 .menu {
-    list-style: none;
-    display:flex;
-    padding-right: 185px; 
+    list-style: none; /* убрать точки */
+    display:flex; /* в одну строку */
+}
+.menu li {
+    margin: 10px; 
 }
 
 
@@ -28,34 +40,36 @@
     width: 100px;
     height: 40px;
     color:#FFFFFF;
-    
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    margin: 24px 0;
+    font-size: 14px;
 }
 
-
-.first {                                 /* 1 часть */
-    width: 1440px;
-    height: 782px;
-    text-align:center;
-    background-image:url("../img/Wallp.png");                   /* тут должен быть фон с ноутбуком*/ 
+.first {
+text-align: center;
 }
 
+#button2  {
+    width: 160px;
+    height: 50px;
+    margin: 24px 0;
+    background-color: #FFFFFF;
+    color: #ED4C5C;
+    border: none; 
+    border-radius: 6px;
+}
 
-.second {                                 /* 2 часть */
+.second {  /* 2 часть */
     width: 1440px;
     height: 500px; 
-}
-
-.second-container {
-    margin:auto;
-    padding-top: 127px;
-    padding-left: 165px;
-    box-sizing: border-box;
-    
 }
 
 .sc-menu {                          /* 2 бордер  */
     display:flex;               /* в одну строку */
     list-style: none;         /* убрать точки */
+    justify-content: center;
 }
 
 .sc-menu-card-first {
@@ -63,22 +77,21 @@
     margin-right: 125px;
 }
 
-#scmf {
+.bodystyle a {
     color: #ED4C5C;
-
+    text-decoration: none;
 }
 
 .third {                                /* 3 часть */
     width: 1440px;
     height: 660px;
-    background-color: #FAFAFA; 
+    background-color: #FAFAFA;
+    text-align: center;
 }
 
-.third-container {
-    text-align: center;
-    padding-top: 63px;
-    padding-right: 165px;
-    padding-left: 165px;
+.flax-container {
+    display: flex;
+    justify-content: center; 
 }
 
 .tc-menu-card-first {
@@ -90,62 +103,59 @@
     width: 293px;
     height: 198px;
     background-color: #FFFFFF;
-
+    margin: 0 auto; /*Контейнер центрируется*/
 }
-
 
 .tc-menu-card-second {
     padding-right:30px; 
 }
 
+.tc-menu-card-second-one {
+    width: 293px;
+    height: 198px;
+    background-color: #FFFFFF;
+    margin: 0 auto; /*Контейнер центрируется*/
+}
 
-.tc-menu {                           /* 3ий бордер   */
-    width: 1140px;
-    height: 450px;
-    display:flex;                   /* в одну строку */
-    list-style: none                /* убрать точки */
+.tc-menu-card-third-one {
+    width: 293px;
+    height: 198px;
+    background-color: #FFFFFF;
+    margin: 0 auto; /*Контейнер центрируется*/
 }
 
 .fourth {                               /* 4 часть */
     width: 1440px;
     height: 500px;
-}
-.fourth-container {                     /* 4 бордер  */
-    text-align: center;
-    padding-top: 63px;
-    padding-right: 165px;
-    padding-left: 165px;
+    text-align: center;   
 }
 
-.foc-menu {                      /* 3 часть бордер 4х элементов  */
-    width: 1110px;
-    height: 226px;
-    display: flex; 
-    list-style: none;
-    padding-bottom: 104px;
-     
+.flax-container2 {                      /* 3 часть бордер 4х элементов  */
+    display: flex;
+    justify-content: center;
 }
 
 .foc-menu-card-first {
-    height: 191px;
-    padding-right: 94px;
+    width: 255px;
+    height: 226px;
+    padding-right:30px;
 }
 
 .foc-menu-card-second {
-    height: 191px;
-    padding-right: 94px;
+    width: 255px;
+    height: 226px;
+    padding-right:30px;
 }
 
 .foc-menu-card-third {
-    height: 191px;
-    padding-right: 94px;
-
+    width: 255px;
+    height: 226px;
+    padding-right:30px;
 }
 
 .foc-menu-card-fourth {
-    height: 191px;
-    padding-right: 195px;
-
+    width: 255px;
+    height: 226px;
 }
 
 .fifth {                                /* 5 часть */
@@ -158,36 +168,41 @@
 
 .fic-menu {                      /* 5 бордер  */
     display:flex;
-    list-style: none   
+    justify-content: center; 
 }
 
 .fic-menu-card-first {
     width: 445px;
-    padding-right: 125px;
     padding-top: 122px;
     padding-left: 165px;
+    padding-right: 125px;
+    white-space: nowrap;
 }
 
 .fic-menu-card-second {
     padding-top: 94px;
-    padding-right: 260px;
+    /*padding-left: 125px;
+    padding-right: 260px; */
     
 }
 
 
 .fic-menu-card-first-icon {
     display:flex;
-    list-style: none; 
+    list-style: none;
+    padding-top: 42px;
 }
 
 
 .sixth {                                /* 6 часть */
     width: 1440px;
     height: 500px;
+    justify-content: center;
 }
 
 .sixth-container {                      /* 6 бордер  */
-    display:flex;  
+    display:flex;
+    justify-content: center;  
 }
 
 .six-menu-card-first {
@@ -196,36 +211,32 @@
     padding-right: 125px;
     padding-left: 176px;
     list-style: none;
-    
-
 }
 
 .six-menu-card-second {
     padding-top: 159px;
-    list-style: none;
-    margin: 10px 0; 
-
-}
-
-
-.six-menu-card-third {
-    width: 160px;
-    height: 60px;
 }
 
 input {
-    width:540px;
+    width: 540px;
     height: 60px;
-    margin: 24px 0; 
+    color:#333333;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    margin: 24px 0 #333333;
 }
 
 #button3 {
     width:160px;
     height: 50px;
-    margin: 24px 0; 
+    margin: 24px 0;
+    color: #FFFFFF;
+    background-color: #ED4C5C;
+    border: none; 
+    border-radius: 6px;
 }
-
-
 
 
 .footer {
@@ -247,6 +258,6 @@ h2 {
     font-size: 36px;
 }
 
-
-
-line-height:26px; /* отступ строк */
+h3 {
+    font-size: 18px;
+}
